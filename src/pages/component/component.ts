@@ -76,6 +76,13 @@ export class ComponentPage {
 
   modal() {
     let modal = this.modalCtrl.create("ModalPage");
+    modal.onDidDismiss(data => {
+      console.log(data);
+    });
     modal.present();
+  }
+
+  slide() {
+    this.navCtrl.push("SlidePage");
   }
 }
