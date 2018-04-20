@@ -22,4 +22,6 @@
     <ion-label fixed>E메일</ion-label>
     <ion-input type="text" readonly [value]="accountData.email"></ion-input>
   </ion-item>
+  <br/>
+  <button ion-button (click)="sendEmail(accountData)">Send a Email</button>
 </ion-content>
